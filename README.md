@@ -30,14 +30,38 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    `.forEach` only iterates and performs a provided function over each element of an array, but doesn't return anything, while map does the same thing while returning something.  
+
 2. What is the difference between a function and a method?
+
+    Functions are blocks of code in which all data passed to them in the forms of parameters/arguments are explicitly passed. Methods are blocks of code similar to functions, but are associated with an object, whether they're an object literal or a newly created one. As well, when a method is called, information from the object is implicitly passed.
 
 3. What is closure?
 
+    A way for nested functions to access data outside of their local scope. 
+
 4. Describe the four rules of the 'this' keyword.
+
+ 1. Window/Global Object Bindings
+
+    If the scope of 'this' is left unspecified, the default scope will be global and the default value of 'this' will be the window/console Object. 
+
+ 2. Implicit Bindings
+
+    If you create or work with an object with functions, and then proceed to call that function using dot notation, 'this' is the object the precedes the dot and function call. 
+
+ 3. New bindings
+
+    This principle comes up once we are working with objects created by constructor functions. When an object is made using a constructor function, and we call that object using dot notation, the 'this' key word refers to the specific instance of the object created using our constructor, NOT the constructor itself. 
+
+ 4. Explicit bindings
+
+    Explicit binding occurs whenever we use the call or apply method. When we use either of these keywords, 'this' is set to the object passed in as an argument to call or apply. 
 
 5. Why do we need super() in an extended class?
 
+    To copy all the properties from its parent classes. 
+    
 ## Project Set up
 
 Follow these steps to set up and work on your project:
